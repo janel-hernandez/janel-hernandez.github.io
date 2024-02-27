@@ -8,8 +8,9 @@ window.addEventListener("DOMContentLoaded", (event) =>{
  
     about.addEventListener("click", function(){
 
-        about.style.color = "#faf0ca";
+        about.style.color = "rgb(246 222 132)";
         about.style.fontWeight = "bolder";
+        about.style.textShadow = "#FC0 0 0 10px";
         about.parentElement.style.width = "70px";
         experience.style.fontWeight = "revert";
         experience.style.color = '#f3f6f7';
@@ -24,7 +25,8 @@ window.addEventListener("DOMContentLoaded", (event) =>{
     experience.addEventListener("click", function(){
         //make the text glow
         experience.style.fontWeight = "bolder";
-        experience.style.color = "#faf0ca";
+        experience.style.color = "rgb(246 222 132)";
+        experience.style.textShadow = "#FC0 0 0 10px";
         experience.parentElement.style.width = "70px";
         education.style.fontWeight = "revert";
         education.style.color = '#f3f6f7';
@@ -38,7 +40,8 @@ window.addEventListener("DOMContentLoaded", (event) =>{
     education.addEventListener("click", function(){
         //make the text glow
         education.style.fontWeight = "bolder";
-        education.style.color = "#faf0ca";
+        education.style.color = "rgb(246 222 132)";
+        education.style.textShadow = "#FC0 0 0 10px";
         education.parentElement.style.width = "70px";
         experience.style.fontWeight = "revert";
         experience.style.color = '#f3f6f7';

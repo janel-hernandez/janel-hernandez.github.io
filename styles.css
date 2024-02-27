@@ -73,8 +73,9 @@ box-sizing: border-box;
 .sidenav a:hover, .horizontal-nav a:hover, .socials a:hover
 {
     font-size : 120%;
-    color: rgb(106, 121, 135, 0.8);
-    color: #faf0ca;
+    /* color: rgb(246 222 132, 0.8); */
+    color: rgb(246,222, 132);
+    text-shadow: #FC0 0 0 10px;
 }
 
 /* Style the content */
@@ -116,7 +117,7 @@ h3
 }
 .heading-font:hover, .footer a:hover, p a:hover, a:hover
 {
-    color: #faf0ca;
+    color: rgb(246 222 132);
 }
 
 .logo img
@@ -261,8 +262,8 @@ p a
     height: 300px; 
     border-radius: 50%; 
     background-color: rgba(255, 255, 255, 0.01); 
-    mix-blend-mode: screen; /* Glowing effect */ 
-    pointer-events: none; /* Allow interaction with underlying elements */ 
+    mix-blend-mode: screen; 
+    pointer-events: none; 
     transform: translate(-50%, -50%); 
     transition: width 0.2s ease, height 0.2s ease; 
     box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.01);  
@@ -299,13 +300,11 @@ p a
 .horizontal-bar
 {
     position: relative;
-    /* align-content: flex-start; */
 }
   
 .horizontal-bar:before {
     content: "";
     position: absolute;
-    /* border-radius: 10px; */
     z-index: 1;
     width: 40px;
     height: 1px;
@@ -320,7 +319,7 @@ p a
 .horizontal-bar:hover
 {
     width: 70px;
-    color: #fbe693;
+    color: rgb(246 222 132);
     text-shadow: #FC0 0 0 10px;
 }
 

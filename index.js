@@ -22,25 +22,31 @@ window.addEventListener("DOMContentLoaded", (event) =>{
     const mobileNav = document.querySelector(".fa.fa-bars");
     const navItems = document.querySelector("#links");
 
-    mobileNav.addEventListener("click", function(){
-        var x = document.getElementById("links");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
+    if (mobileNav)
+    {
+        mobileNav.addEventListener("click", function(){
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
 
-    });
+        });
+    }
 
-    navItems.addEventListener("click", function(){
-        var x = document.getElementById("links");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
+    if(navItems)
+    {
+        navItems.addEventListener("click", function(){
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
 
-    });
+        });
+    }
 
     const about = document.querySelector(".about");
     const experience = document.querySelector(".experience");

@@ -366,7 +366,7 @@ p a
 {
     text-align: center;
     position: relative;
-    top: -75px;
+    top: -55px;
     font-style: italic;
 }
 
@@ -378,6 +378,8 @@ p a
     font-style: italic;
     /* color: #fbe693; */
 }
+
+
 
 .section
 {
@@ -550,6 +552,30 @@ h4
 
 .title
 {
+    max-width: fit-content;
+    font-style: bold;
+    color: #fbe693;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #fbe693; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.web-title
+{
+    /* top: -200px; */
+    text-align: center;
+    position: relative;
+    top: -75px;
     max-width: fit-content;
     font-style: bold;
     color: #fbe693;

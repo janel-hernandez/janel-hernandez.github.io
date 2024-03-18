@@ -2,6 +2,46 @@
 
 window.addEventListener("DOMContentLoaded", (event) =>{
 
+    function isMobile() {
+        const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+        return regex.test(navigator.userAgent);
+      }
+      
+      if (isMobile()) {
+        console.log("Mobile device detected");
+        document.querySelector(".root").style.display = "none";
+        document.querySelector(".mobile").style.display = "block";
+        document.body.style.background = "#041525;";
+        document.body.style.color = "#fdfcf8";
+      } else {
+        console.log("Desktop device detected");
+        document.querySelector(".root").style.display = "block";
+        document.querySelector(".mobile").style.display = "none";
+      }
+
+    const mobileNav = document.querySelector(".fa.fa-bars");
+    const navItems = document.querySelector("#links");
+
+    mobileNav.addEventListener("click", function(){
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+
+    });
+
+    navItems.addEventListener("click", function(){
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+
+    });
+
     const about = document.querySelector(".about");
     const experience = document.querySelector(".experience");
     const education = document.querySelector(".education");
@@ -18,8 +58,7 @@ window.addEventListener("DOMContentLoaded", (event) =>{
         education.style.fontWeight = "revert";
         education.style.color = '#f3f6f7';
         education.parentElement.style.width = "revert";
-        
-        console.log("ABOUT IS GETTING CLICKED");
+
     });
 
     experience.addEventListener("click", function(){
@@ -34,11 +73,9 @@ window.addEventListener("DOMContentLoaded", (event) =>{
         about.style.color = "#f3f6f7";
         about.style.fontWeight = "revert";
         about.parentElement.style.width = "revert";
-        console.log("experience  IS GETTING CLICKED");
     });
 
     education.addEventListener("click", function(){
-        //make the text glow
         education.style.fontWeight = "bolder";
         education.style.color = "rgb(246 222 132)";
         education.style.textShadow = "#FC0 0 0 10px";
@@ -49,7 +86,6 @@ window.addEventListener("DOMContentLoaded", (event) =>{
         about.style.fontWeight = "revert";
         about.style.color = "#f3f6f7";
         about.parentElement.style.width = "revert";
-        console.log("education IS GETTING CLICKED");
     });
 
     const cursor = document.querySelector('.spotlight'); 
@@ -72,25 +108,10 @@ window.addEventListener("DOMContentLoaded", (event) =>{
         }); 
     }); 
 
-    // const mask = document.querySelector(".spotlight::after");
 
-    // document.addEventListener('mousemove', (pos) => {
   
-    //     console.log("HERE");
-    //     // Calculate mouse position in percentages.
-    //     let x = parseInt( pos.clientX / window.innerWidth * 100 );
-    //     let y = parseInt( pos.clientY / window.innerHeight * 100 );
-      
-    //     // Update the custom property values on the body.
-    //     mask.style.setProperty('--mouse-x', x + '%');
-    //     mask.style.setProperty('--mouse-y', y + '%'); 
-    // });
 
-    // mask.addEventListener("mousemove", (e) => {
-    //     const { x, y } = mask.getBoundingClientRect();
-    //     mask.style.left = "--x", e.clientX - x;
-    //     mask.style.top = "--y", e.clientY - y;
-    // });
+    
 
 });
 

@@ -73,7 +73,6 @@ box-sizing: border-box;
 .sidenav a:hover, .horizontal-nav a:hover, .socials a:hover
 {
     font-size : 120%;
-    /* color: rgb(246 222 132, 0.8); */
     color: rgb(246,222, 132);
     text-shadow: #FC0 0 0 10px;
 }
@@ -212,6 +211,7 @@ body
     font-size: 16px;
 }
 
+
 .footer
 {
     font-size:14px;
@@ -221,6 +221,13 @@ body
 .footer a, .horizontal-nav a, a 
 {
     color:  #f9f9f1;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.mobile-footer a
+{
+    color: #fdfcf8;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -255,6 +262,28 @@ p a
 {
     margin: 0;
 }
+
+
+.mobile-socials 
+{
+    /* color: black; */
+    font-size: x-large;
+    display: flex;
+    padding: 0px;
+    width: 100px;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.mobile-socials div 
+{
+    padding: 16px;
+    text-decoration: none;
+    color: #f9f9f1;
+}
+
 
 .spotlight{ 
     position: fixed; 
@@ -341,6 +370,15 @@ p a
     font-style: italic;
 }
 
+.mobile-bio
+{
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    font-style: italic;
+    /* color: #fbe693; */
+}
+
 .section
 {
     padding-left: 10px;
@@ -389,4 +427,149 @@ h4
     font-family: "Nunito", sans-serif;
     font-size: 14px;
     font-weight: 300;
+}
+
+.beginning
+{
+    padding-top: 110px;
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mobile
+{
+    color: #2e3532ff;
+    color: #fdfcf8;
+    background-size: cover;
+    background-color: #041525;
+    border-radius: 10px;
+}
+
+.mobile-container 
+{
+    max-width: 480px;
+    margin: auto;
+    color: #fdfcf8;
+    background-color: #041525;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+.topnav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fbe693;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.topnav #links 
+{
+  display: none;
+}
+
+.topnav a 
+{
+    color: #fbe693;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon 
+{
+  /* background: black; */
+  /* color: black; */
+  color: #fdfcf8;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover 
+{
+  /* background-color: #ddd; */
+  background-color: rgba(29, 44, 58, 0.5);
+  color: #fbe693;
+  /* color: black; */
+}
+
+.active 
+{
+    background-color:#fdfcf8;
+    color: white;
+}
+
+.fa.fa-bars
+{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.active img
+{
+    width:100px;
+}
+.mobile-logo
+{
+    display: table-row; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    max-height: 100%;
+    padding-bottom: 0px;
+    animation: 
+      spin 14s linear infinite,
+      change 3s infinite linear .5s;
+    background-size: cover;
+}
+
+@keyframes change {
+    0%,33.33% {
+      background-image: "Images/logo-dark-nobg.png";
+    }
+    33.34%,66.66% {
+      background-image: "Images/logo-dark-nobg.png";
+    }
+    66.67%,100% {
+      background-image: "Images/logo-dark-nobg.png";
+    }
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+.title
+{
+    max-width: fit-content;
+    font-style: bold;
+    color: #fbe693;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
 }

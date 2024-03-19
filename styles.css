@@ -214,7 +214,7 @@ body
 
 .footer
 {
-    font-size:14px;
+    font-size:12px;
     padding: 15px;
 }
 
@@ -225,11 +225,18 @@ body
     font-weight: bolder;
 }
 
+.mobile-footer
+{
+    font-size:12px;
+    padding: 15px;
+}
+
 .mobile-footer a
 {
     color: #fdfcf8;
     text-decoration: none;
     font-weight: bolder;
+    font-size: 12px;
 }
 
 p a

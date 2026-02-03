@@ -215,6 +215,7 @@ body
 .footer, .mobile-footer
 {
     font-size:12px;
+    font-size:12px;
     padding: 15px;
 }
 
@@ -263,6 +264,28 @@ p a
 {
     margin: 0;
 }
+
+
+.mobile-socials 
+{
+    /* color: black; */
+    font-size: x-large;
+    display: flex;
+    padding: 0px;
+    width: 100px;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.mobile-socials div 
+{
+    padding: 16px;
+    text-decoration: none;
+    color: #f9f9f1;
+}
+
 
 
 .mobile-socials 
@@ -368,8 +391,20 @@ p a
     text-align: center;
     position: relative;
     top: -55px;
+    top: -55px;
     font-style: italic;
 }
+
+.mobile-bio
+{
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    font-style: italic;
+    /* color: #fbe693; */
+}
+
+
 
 .mobile-bio
 {

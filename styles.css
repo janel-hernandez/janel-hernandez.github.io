@@ -145,7 +145,7 @@ h3
     align-content: center;
     display: inline-grid;
     line-height: 1.3;
-    font-size: 18px;
+
 
 }
 
@@ -531,6 +531,26 @@ h4
       spin 14s linear infinite,
       change 3s infinite linear .5s;
     background-size: cover;
+}
+
+
+.certificate-title
+{
+    margin-bottom: 10px;
+}
+
+.title-section
+{
+     margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.right-align
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    padding-bottom: 10px;
 }
 
 @keyframes change {
